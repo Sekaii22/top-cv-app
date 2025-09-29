@@ -5,12 +5,14 @@ import './App.css'
 import "./styles/form.css";
 import InfoSection from './components/InfoSection'
 import EducationSection from './components/EducationSection';
+import ExperienceSection from './components/ExperienceSection';
 
 function App() {
   return (
     <>
       {/* <InfoSection></InfoSection> */}
-      <EducationSection></EducationSection>
+      {/* <EducationSection></EducationSection> */}
+      <ExperienceSection></ExperienceSection>
     </>
   )
 }

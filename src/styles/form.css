@@ -1,17 +1,23 @@
-section {
+.input-category {
     width: 500px;
     background-color: #1f1f1f;
     border-radius: 20px;
     padding: 10px 25px;
     position: relative;
+    margin: 20px;
 }
 
-input {
+input, textarea {
     width: 100%;
     padding: 14px 10px;
     background-color: transparent;
     border-radius: 5px;
     border-width: 1px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
 }
 
 label {
@@ -40,10 +46,11 @@ h1 {
     position: absolute;
     top: 25px;
     right: 25px;
+    background-color: rgba(5, 94, 5, 0.8);
 }
 
 .del-btn {
-    background-color: rgb(113, 0, 0);
+    background-color: rgba(113, 0, 0, 0.8);
 }
 
 hr {

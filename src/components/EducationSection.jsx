@@ -25,7 +25,7 @@ export default function EducationSection() {
     }
 
     return (
-        <section>
+        <section className="input-category">
             <h1>Education</h1>
             <button className="add-btn" onClick={handleAdd}>+</button>
             {
@@ -34,22 +34,26 @@ export default function EducationSection() {
                         <InfoInput
                             title="School Name"
                             value={edu.school}
+                            id={edu.id}
                             onChange={(e) => handleChange({...edu, school: e.target.value})}
                         ></InfoInput>
                         <InfoInput
                             title="Field of Study"
                             value={edu.field}
+                            id={edu.id}
                             onChange={(e) => handleChange({...edu, field: e.target.value})}
                         ></InfoInput>
                         <InfoInput
                             title="Start Date"
                             value={edu.startDate}
+                            id={edu.id}
                             onChange={(e) => handleChange({...edu, startDate: e.target.value})}
                             type="date"
                         ></InfoInput>
                         <InfoInput
                             title="End Date"
                             value={edu.endDate}
+                            id={edu.id}
                             onChange={(e) => handleChange({...edu, endDate: e.target.value})}
                             type="date"
                         ></InfoInput>

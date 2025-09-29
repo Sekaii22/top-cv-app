@@ -9,7 +9,7 @@ export default function InfoSection() {
     }
 
     return (
-        <section>
+        <section className="input-category">
             <h1>General Information</h1>
             <div>
                 <InfoInput 
