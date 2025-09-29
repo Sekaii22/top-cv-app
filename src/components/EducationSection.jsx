@@ -30,7 +30,7 @@ export default function EducationSection() {
             <button className="add-btn" onClick={handleAdd}>+</button>
             {
                 educationList.map((edu, index) => (
-                    <div key={edu.id} className="input-group">
+                    <div key={edu.id}>
                         <InfoInput
                             title="School Name"
                             value={edu.school}
