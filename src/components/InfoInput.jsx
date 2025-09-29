@@ -1,5 +1,5 @@
 export default function InfoInput({title, value, onChange, type='text'}) {
-    const htmlId = title.toLowerCase() + '-input';
+    const htmlId = title.toLowerCase().split(' ').join('-') + '-input';
 
     return (
         <div className="info-input">

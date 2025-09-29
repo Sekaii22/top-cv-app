@@ -4,11 +4,13 @@ import { useState } from 'react'
 import './App.css'
 import "./styles/form.css";
 import InfoSection from './components/InfoSection'
+import EducationSection from './components/EducationSection';
 
 function App() {
   return (
     <>
-      <InfoSection></InfoSection>
+      {/* <InfoSection></InfoSection> */}
+      <EducationSection></EducationSection>
     </>
   )
 }

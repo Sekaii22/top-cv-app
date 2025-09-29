@@ -2,7 +2,8 @@ section {
     width: 500px;
     background-color: #1f1f1f;
     border-radius: 20px;
-    padding: 0 25px;
+    padding: 10px 25px;
+    position: relative;
 }
 
 input {
@@ -28,4 +29,27 @@ h1 {
 
 .info-input {
     padding-bottom: 20px;
+}
+
+.input-group {
+
+}
+
+.add-btn {
+    padding: 0;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.del-btn {
+    background-color: rgb(113, 0, 0);
+}
+
+hr {
+    margin: 20px 0;
 }
