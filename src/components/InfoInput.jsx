@@ -1,4 +1,4 @@
-export default function InfoInput({title, value, onChange, type='text', id}) {
+export default function InfoInput({title, value, onChange, id, type='text', placeholder=''}) {
     const appendId = id !== undefined ? '-' + id : '';
     const htmlId = title.toLowerCase().split(' ').join('-') + '-input' + appendId;
 
@@ -11,6 +11,7 @@ export default function InfoInput({title, value, onChange, type='text', id}) {
                         id={htmlId}
                         value={value}
                         onChange={onChange}
+                        placeholder={placeholder}
                     ></textarea>
                 ) : (
                     <input 
@@ -18,6 +19,7 @@ export default function InfoInput({title, value, onChange, type='text', id}) {
                         type={type} 
                         value={value} 
                         onChange={onChange}
+                        placeholder={placeholder}
                     />
                 )
             }

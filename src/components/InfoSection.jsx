@@ -10,16 +10,19 @@ export default function InfoSection({info, onChange}) {
                     title="Name" 
                     value={info.name} 
                     onChange={(e) => onChange({...info, name: e.target.value})}
+                    placeholder="Albert Wong"
                 ></InfoInput>
                 <InfoInput 
                     title="Email" 
                     value={info.email} 
                     onChange={(e) => onChange({...info, email: e.target.value})}
+                    placeholder="albert@fakemail.com"
                 ></InfoInput>
                 <InfoInput 
                     title="Phone" 
                     value={info.phone} 
                     onChange={(e) => onChange({...info, phone: e.target.value})}
+                    placeholder="98765432"
                 ></InfoInput>
             </div>
         </section>
