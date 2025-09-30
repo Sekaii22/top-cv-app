@@ -1,3 +1,5 @@
+/* breakpoint at 600px for mobile, 1000px for tablet */
+
 .input-category {
     min-width: 400px;
     background-color: #1f1f1f;
@@ -79,12 +81,17 @@ form > div {
     "education experience";
 }
 
-form > button[type="submit"] {
+.edit-btn {
     margin-right: 20px;
 }
 
-form > button {
+form > button,
+main > div > button {
     font-size: 1.2rem;
+}
+
+button:disabled {
+    pointer-events: none;
 }
 
 #general {

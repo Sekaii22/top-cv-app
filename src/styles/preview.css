@@ -1,0 +1,88 @@
+@media print {
+    header {
+      display: none;
+    }
+
+    button {
+        display: none;
+    }
+}
+
+p {
+    text-align: start;
+}
+
+.preview {
+    text-align: start;
+    border: 2px solid rgb(162, 162, 162);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+
+    /* ~ print width */
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.preview p,
+.preview span,
+.preview li {
+    font-size: 1rem;
+}
+
+.preview h1 {
+    font-size: 2rem;
+}
+
+.preview h2 {
+    font-size: 1.5rem;
+}
+
+.preview h3 {
+    font-size: 1.2rem;
+}
+
+.preview h4 {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.preview hr {
+    margin: 16px 0 12px;
+}
+
+.preview li {
+    margin-left: 25px;
+    padding: 5px 0;
+}
+
+.cv-title, .cv-education, .cv-experience {
+    padding-bottom: 20px;
+}
+
+.cv-title > h1 {
+    padding: 0 0 8px;
+}
+
+.cv-title > span {
+    padding-right: 20px;
+    font-size: 1.1rem;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.info-entry {
+    padding-bottom: 20px;
+}
+

@@ -23,7 +23,6 @@ export default function InfoInput({title, value, onChange, id, type='text', plac
                     />
                 )
             }
-            
         </div>
     );
 }
