@@ -56,3 +56,33 @@ h1 {
 hr {
     margin: 20px 0;
 }
+
+form > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "general general"
+    "education experience";
+}
+
+form > button[type="submit"] {
+    margin-right: 20px;
+}
+
+form > button {
+    font-size: 1.2rem;
+}
+
+#general {
+    grid-area: general;
+}
+
+#education {
+    grid-area: education;
+    align-self: start;
+}
+
+#experience {
+    grid-area: experience;
+    align-self: start;
+}
