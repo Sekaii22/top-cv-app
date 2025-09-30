@@ -1,7 +1,5 @@
-/* breakpoint at 600px for mobile, 1000px for tablet */
-
 .input-category {
-    min-width: 400px;
+    min-width: 280px;
     background-color: #1f1f1f;
     border-radius: 20px;
     padding: 10px 25px;
@@ -81,17 +79,13 @@ form > div {
     "education experience";
 }
 
-.edit-btn {
-    margin-right: 20px;
-}
-
 form > button,
 main > div > button {
     font-size: 1.2rem;
 }
 
-button:disabled {
-    pointer-events: none;
+.edit-btn {
+    margin-right: 20px;
 }
 
 #general {
@@ -106,4 +100,25 @@ button:disabled {
 #experience {
     grid-area: experience;
     align-self: start;
+}
+
+/* tablet */
+@media (max-width: 980px) {
+    form > div {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .input-category {
+        padding: 10px;
+        margin: 16px 0;
+    }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .add-btn {
+        position: static;
+        margin-bottom: 20px;
+    }
 }

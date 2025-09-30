@@ -51,6 +51,8 @@ export default function EducationSection({educationList, onChange, onAdd, onDele
                             onClick={() => onDelete(edu.id)} type="button"
                             onMouseEnter={() => handleHover(edu.id)}
                             onMouseLeave={() => handleHover(null)}
+                            onFocus={() => handleHover(edu.id)}
+                            onBlur={() => handleHover(null)}
                         >Delete</button>
                         {(educationList.length > 1 && index < educationList.length - 1) && <hr />}
                     </div>

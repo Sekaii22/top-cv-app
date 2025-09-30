@@ -59,6 +59,8 @@ export default function ExperienceSection({expList, onChange, onAdd, onDelete}) 
                             onClick={() => onDelete(exp.id)} type="button"
                             onMouseEnter={() => handleHover(exp.id)}
                             onMouseLeave={() => handleHover(null)}
+                            onFocus={() => handleHover(exp.id)}
+                            onBlur={() => handleHover(null)}
                         >Delete</button>
                         {(expList.length > 1 && index < expList.length - 1) && <hr />}
                     </div>
